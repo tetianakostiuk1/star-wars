@@ -1,0 +1,21 @@
+@import '../../styles/utils/mixins';
+
+.overlayImage {
+  width: 200px;
+  height: 300px;
+
+  @include onTabletPlus {
+    width: 400px;
+    height: 200px;
+  }
+
+  @include onDesktop {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.overlayButton {
+  font-size: 20px;
+  color: #fff;
+}

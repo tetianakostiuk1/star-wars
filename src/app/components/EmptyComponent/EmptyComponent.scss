@@ -1,0 +1,11 @@
+@import '../../styles/utils/breakpoints';
+
+.noContent {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 22px;
+
+  @include onTablet {
+    padding-top: 250px;
+  }
+}

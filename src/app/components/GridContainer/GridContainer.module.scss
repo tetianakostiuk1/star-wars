@@ -1,0 +1,27 @@
+@import '../../styles/utils/mixins.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 25px 16px;
+  justify-content: center;
+
+  width: 100%;
+  padding: 60px 130px;
+
+  @include contentPaddingInline;
+
+  @include onTablet {
+    grid-template-columns: repeat(12, 34.67px);
+    gap: 20px;
+  }
+
+  @include onTabletPlus {
+    grid-template-columns: repeat(18, 32px);
+    gap: 25px 16px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(24, 32px);
+  }
+}
